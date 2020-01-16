@@ -12,7 +12,7 @@ pool:
 steps:
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'enSonarCloudCon'
+    SonarCloud: 'code-smell-con'
     organization: 'yevheniinokhrinorg'
     scannerMode: 'MSBuild'
     projectKey: 'yevheniinokhrin_code-smell'

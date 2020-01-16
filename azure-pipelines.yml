@@ -10,6 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'code-smell-con'
+    organization: 'yevheniinokhrinorg'
+    scannerMode: 'MSBuild'
+    projectKey: 'yevheniinokhrin_code-smell'
+    projectName: 'yevheniinokhrin_code-smell'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'

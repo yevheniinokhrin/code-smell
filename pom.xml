@@ -41,6 +41,13 @@
             <scope>test</scope>
             <type>jar</type>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.sonarsource.sonarlint.core/sonarlint-core -->
+        <dependency>
+            <groupId>org.sonarsource.sonarlint.core</groupId>
+            <artifactId>sonarlint-core</artifactId>
+            <version>4.7.0.12286</version>
+        </dependency>
+
     </dependencies>
     <build>
     <plugins>

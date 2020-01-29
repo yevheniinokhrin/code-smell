@@ -33,7 +33,7 @@ public class CustomerReport {
     }
 
     public String printCustomerAccount() {
-        return "Account: IBAN: " + account.getIban() + ", Money: " + account.getMoneyAmount() + ", Account type: "
+        return LINE + account.getIban() + ", Money: " + account.getMoneyAmount() + ", Account type: "
                 + account.getType();
     }
 
